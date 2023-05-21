@@ -7,11 +7,9 @@ class SpreadsheetReader:
         self.csvfile_path = csvfile_path
 
     def read_csv(self) -> None:
-        contents = []
         with open(self.csvfile_path, encoding="latin-1") as csv_file:
             csv_contents = csv.reader(csv_file)
-            for row in list(csv_contents)[1:]:
-                contents.append(row)
+            return list(csv_contents)[1:]
             
 
 
