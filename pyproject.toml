@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "manning-algorithms-and-data-structures"
+version = "0.1.0"
+description = ""
+authors = ["Abraham Papp"]
+readme = "README.md"
+packages = [{include = "manning_algorithms_and_data_structures"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
